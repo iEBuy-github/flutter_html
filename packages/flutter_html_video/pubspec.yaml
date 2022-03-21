@@ -3,6 +3,8 @@ description: Video widget for flutter_html.
 version: 3.0.0-alpha.2
 homepage: https://github.com/Sub6Resources/flutter_html
 
+publish_to: "none"
+
 environment:
   sdk: ">=2.12.0 <3.0.0"
   flutter: ">=2.2.0"
@@ -15,8 +17,18 @@ dependencies:
 #  flutter_html:
 #    path: ../..
 
-  video_player: '>=2.2.8 <3.0.0'
-  chewie: '>=1.1.0 <2.0.0'
+  # video_player: '>=2.2.8 <3.0.0'
+  video_player:
+    git: 
+      url: https://github.com/iEBuy-github/plugins-1
+      ref: cf1ecafd21b0a7c014f8e7725e54e169b9af0138
+      path: packages/video_player/video_player
+
+  # chewie: '>=1.1.0 <2.0.0'
+  chewie: 
+    git: 
+      url: https://github.com/iEBuy-github/chewie
+      ref: custom
 
 dev_dependencies:
   flutter_test:
